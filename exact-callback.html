@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Stratify – terug naar Stratify</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 40px; color: #17211D">
+<p>Je wordt teruggestuurd naar Stratify op deze computer…</p>
+<p><a id="l" href="#">Lukt dat niet? Klik hier.</a></p>
+<script>
+  // Exact Online stuurt na het inloggen een eenmalige code (en een controlewaarde) mee in het adres.
+  // Deze pagina geeft die alleen door aan Stratify op deze pc; er wordt niets opgeslagen of verstuurd.
+  var target = "http://localhost:3210/api/exact/callback" + location.search;
+  document.getElementById("l").href = target;
+  location.replace(target);
+</script>
+</body>
+</html>
